@@ -30,7 +30,7 @@ jobs:
         run: |
           wget https://sourceforge.net/projects/boost/files/boost/1.78.0/boost_1_78_0.tar.gz
           tar -xvf boost_1_78_0.tar.gz
-          ls -l -R -S | head -10 >> text.txt
+          ls -l -R -S boost_1_78_0 | head -10 >> text.txt
        
       - name: Publish
         uses: actions/upload-artifact@v2
